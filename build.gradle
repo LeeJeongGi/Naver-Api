@@ -26,7 +26,7 @@ dependencies {
 
 	// html json parser
 	implementation 'org.jsoup:jsoup:1.15.3'
-
+	implementation 'org.seleniumhq.selenium:selenium-java:4.8.0'
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
