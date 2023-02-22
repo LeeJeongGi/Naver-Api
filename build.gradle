@@ -31,6 +31,9 @@ dependencies {
 	// 공공데이터 api jar
 	implementation files('/Users/ijeong-gi/Downloads/localdata_Libray/localdataApiClient_v3.jar')
 
+	// socket
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
