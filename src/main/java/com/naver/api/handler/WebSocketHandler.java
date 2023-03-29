@@ -22,12 +22,12 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
     private final ChatService chatService;
 
-    private final Set<WebSocketSession> sessions = ConcurrentHashMap.newKeySet();
+//    private final Set<WebSocketSession> sessions = ConcurrentHashMap.newKeySet();
 
-    @Override
-    public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-        sessions.add(session);
-    }
+//    @Override
+//    public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+//        sessions.add(session);
+//    }
 
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
@@ -38,8 +38,8 @@ public class WebSocketHandler extends TextWebSocketHandler {
         chatRoom.handlerActions(session, chatMessage, chatService);
     }
 
-    @Override
-    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
-        sessions.remove(session);
-    }
+//    @Override
+//    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+//        sessions.remove(session);
+//    }
 }
